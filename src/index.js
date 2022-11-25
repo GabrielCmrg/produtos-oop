@@ -23,7 +23,47 @@ class TaxItem extends Item {
     super(category, description, price);
   }
 
+  getTax() {
+    return 0;
+  }
+
   calculateTax(tax) {
     return this.price * tax;
+  }
+}
+
+class Beer extends TaxItem {
+  constructor(description, price) {
+    super("Beer", description, price);
+  }
+
+  getTax() {
+    return 0.2;
+  }
+}
+
+class Cigar extends TaxItem {
+  constructor(description, price) {
+    super("Cigar", description, price);
+  }
+
+  getTax() {
+    return 0.25;
+  }
+}
+
+class Electronics extends TaxItem {
+  constructor(description, price) {
+    super("Electronics", description, price);
+  }
+
+  getTax() {
+    return 0.3;
+  }
+}
+
+class Water extends Item {
+  constructor(description, price) {
+    super("Water", description, price);
   }
 }
