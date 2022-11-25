@@ -1,8 +1,10 @@
-export * as Beer from "./Beer.js";
-export * as Cigar from "./Cigar.js";
-export * as Eletronics from "./Eletronics.js";
-export * as Water from "./Water.js";
-export * as Order from "./Order.js";
+import Beer from "./Beer.js";
+import Cigar from "./Cigar.js";
+import Eletronics from "./Eletronics.js";
+import Water from "./Water.js";
+import Order from "./Order.js";
 
-export * as Item from "./Item.js";
-export * as TaxItem from "./TaxItem.js";
+import Item from "./Item.js";
+import TaxItem from "./TaxItem.js";
+
+export { Beer, Cigar, Eletronics, Water, Order, Item, TaxItem };
