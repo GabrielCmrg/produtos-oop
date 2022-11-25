@@ -4,7 +4,7 @@ export default class Order {
   }
 
   addItem(item) {
-    this.item.push(item);
+    this.items.push(item);
   }
 
   getTotal() {
