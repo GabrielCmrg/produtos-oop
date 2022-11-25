@@ -1,3 +1,5 @@
+import TaxItem from "./TaxItem.js";
+
 export default class Order {
   constructor() {
     this.items = [];
